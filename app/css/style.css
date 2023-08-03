@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+}
+main {
+    border-radius: 20px;
+    margin-top: -20px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    padding-bottom: 80px;
+}
+.mobileFooter {
+    width: calc(100% - 40px);
+    padding: 20px;
+    box-shadow: 0px 4px 25px rgba(89 ,73 ,30 , 0.15);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+}
+.mobileFooter nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobileFooter nav li i{
+    font-size: 23px;
+    color: #09AE8D;
+}
+
+.mobileFooter nav li i.active {
+    color: white;
+    background-color: #09AE8D;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.headerMobile {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    padding: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(9,174,141,1) 0%, hsl(168, 90%, 36%) 69%, rgb(7, 134, 109) 100%);
+    padding-bottom: 40px;
+}
+.username_name {
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+h2 {
+    font-size: 22px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 25px rgba(89 ,73 ,30 , 0.15);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.cardInfo {
+    padding-left: 10px;
+}
+
+.cardImg {
+    width: 40px;
+}
+
+/*PROFILE PAGE*/
+
+.profilePage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 60px;
+    margin: auto;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container p {
+    text-align: center;
+    font-weight: 500;
+}
+.input {
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 30px;
+    border: none;
+    background-color: rgb(245, 240, 240);
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.profileLabel {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.large {
+    height: 120px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 40%;
+        margin-left: 20px;
+    }
+    .mobileFooter {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: calc(100% - 100px);
+    }
+}
