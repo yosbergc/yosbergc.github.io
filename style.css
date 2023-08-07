@@ -57,6 +57,10 @@ header {
     margin-right: 10px;
     margin-left: 40px;
 }
+.green-title {
+    font-size: 40px;
+    color: #09ae8d;
+}
 .hero-section {
     height: 450px;
     display: flex;

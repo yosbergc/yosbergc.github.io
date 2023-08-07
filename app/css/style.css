@@ -255,6 +255,21 @@ p {
         font-size: 16px;
         font-family: 'Red Hat Display', sans-serif;
     }
+    .green-title {
+        font-size: 40px;
+        color: #09ae8d;
+        font-weight: 700;
+    }
+    .fine-title {
+        font-weight: 300;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    .botTitles {
+        position: absolute;
+        right: calc(50% - 284px);;
+        top: calc(50% - 79px);
+    }
     .chatInput--desktop:focus {
         outline:none;
     }
