@@ -164,6 +164,10 @@ p {
 @media only screen and (min-width: 1024px) {
     .desktop--version {
         display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
     }
     .mobileFooter {
         display: none;
@@ -187,6 +191,7 @@ p {
         overflow: hidden;
         flex-direction: column;
         align-items: center;
+        max-width: 100%;
     }
     .desktop--menu ul {
         list-style: none;
@@ -204,6 +209,11 @@ p {
         border-radius: 15px;
         color: rgb(70, 64, 64);
     }
+    .desktop--menu ul li:hover {
+        background-color: rgb(243, 236, 236);
+        transition: 0.2s;
+        cursor: pointer;
+    }
     .desktopLogo {
         width: 50px;
         height: 50px;
@@ -218,5 +228,34 @@ p {
         object-fit: cover;
         border-radius: 32px;
         margin-right: 10px;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .contactBar--Desktop {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 4px 25px rgba(89 ,73 ,30 , 0.20);
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        right: calc(72% - 844px);
+        bottom: 40px;
+    }
+    .contactBar--Desktop svg:hover {
+        cursor: pointer;
+    } 
+    .chatInput--desktop {
+        width: 800px;
+        height: 30px;
+        border: none;
+        font-size: 16px;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    .chatInput--desktop:focus {
+        outline:none;
     }
 }
