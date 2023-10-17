@@ -1,3 +1,9 @@
+:root {
+    --white-color: #eef3ff;
+    --primary-color: #798bf9;
+    --secondary-color: #2d2e82;
+    --third-color: #1c1a4c;
+}
 * {
     padding: 0px;
     margin: 0px;
@@ -24,7 +30,7 @@ header {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     font-size: 17px;
-    color: black;
+    color: var(--third-color);
 }
 
 .second-part-header {
@@ -38,8 +44,8 @@ header {
 .header-cta {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    border: 2px solid #09ae8d;
-    background-color: #09ae8d;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
@@ -48,9 +54,9 @@ header {
 .header-login {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    border: 2px solid #09ae8d;
+    border: 2px solid var(--primary-color);
     background-color: white;
-    color: #09ae8d;
+    color: var(--primary-color);
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -59,9 +65,10 @@ header {
 }
 .green-title {
     font-size: 40px;
-    color: #09ae8d;
+    color: var(--primary-color);
 }
 .hero-section {
+    padding-top: 50px;
     height: 450px;
     display: flex;
     align-items: center;
@@ -77,7 +84,7 @@ header {
 }
 
 .firstPart-hero-section h1 span {
-    color: #09ae8d;
+    color: var(--primary-color);
 }
 
 .firstPart-hero-section p {
@@ -89,8 +96,8 @@ header {
 .hero-section-button {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    border: 2px solid #09ae8d;
-    background-color: #09ae8d;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
@@ -101,9 +108,61 @@ header {
     max-width: 50%;
 }
 .secondPart-hero-section {
-    margin: 0 auto;
+    width: 50%;
+    display: flex;
+}
+
+.second-section {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.second-section--first-part {
     width: 50%;
 }
+.second-section--first-part img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.second-section--second-part {
+    width: 50%;
+    padding-right: 100px;
+}
+.third-section {
+    background-color: var(--third-color);
+    color: white;
+}
+.second-section--second-part h2 {
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.second-section--second-part p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.thirdpart {
+    padding-left: 100px;
+}
+.third-section img {
+    display: flex;
+    align-items: end;
+}
 .hero-section-image {
-    width: 500px;
+    width: 100%;
+}
+.why-choose-us h2{
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.why-choose-us span {
+    color: var(--primary-color);
 }
