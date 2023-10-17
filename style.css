@@ -20,7 +20,7 @@ header {
     align-items: center;
 }
 .main-logo {
-    width: 45px;
+    width: 150px;
     object-fit: contain;
 }
 
@@ -165,4 +165,62 @@ header {
 }
 .why-choose-us span {
     color: var(--primary-color);
+}
+.testimonials {
+    display: flex;
+}
+.review {
+    background-color: var(--white-color);
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+.review h3 {
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.review p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.review .stars {
+    font-size: 20px;
+}
+footer {
+    background-color: var(--third-color);
+    padding: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    justify-content: end;
+}
+footer li {
+    margin-left: 30px;
+}
+.sectionOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer img {
+    width: 150px;
+}
+footer p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    margin-top: 50px;
 }
