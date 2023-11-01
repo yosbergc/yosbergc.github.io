@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brain Flow - Your AI ADHD Assistant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,8 +13,27 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" class="main-logo">
-        <div class="second-part-header">
+        <div class="desktopHeader">
+            <img src="img/logo.png" class="main-logo">
+            <div class="second-part-header">
+                <nav>
+                    <ul class="main-nav">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Pricing</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <button class="header-login">Sign In</button>
+                <button class="header-cta">Try for free</button>
+            </div>
+        </div>
+        <div class="mobileHeader">
+            <img src="img/logo.png" class="main-logo">
+            <img src="img/menuIcon.png" class="menuIcon">
+        </div>
+        <div class="mobileMenu isClosed">
+            <img src="img/closeMenu.png" class="closeMenuImage">
             <nav>
                 <ul class="main-nav">
                     <li>Home</li>
@@ -23,8 +42,6 @@
                     <li>Contact</li>
                 </ul>
             </nav>
-            <button class="header-login">Sign In</button>
-            <button class="header-cta">Try for free</button>
         </div>
     </header>
     <main>
@@ -106,5 +123,6 @@
             <p>© 2023, Brainflow. All rights reserved.</p>
         </footer>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
